@@ -3,5 +3,8 @@ class FriendsController < ApplicationController
         @friend = Friend.find(params[:id])
         
     end
+    def index
+        @friend = Friend.all
+    end
 
 end
