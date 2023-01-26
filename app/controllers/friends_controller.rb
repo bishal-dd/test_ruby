@@ -6,5 +6,11 @@ class FriendsController < ApplicationController
     def index
         @friend = Friend.all
     end
+    def new
+    end
+
+    def create
+        render plain: params[:friends]
+    end
 
 end

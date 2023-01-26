@@ -1,0 +1,19 @@
+<h1>Create a new Friend</h1>
+ 
+<%= form_with scope: :friend, url: friends_path, local: true do |f| %>
+  <p> 
+    <%= f.label :Name %><br/> 
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :Age %><br/> 
+    <%= f.number_field :age %> 
+  </p>
+  <p> 
+    <%= f.label :Email %><br/> 
+    <%= f.email_field :email %>
+  </p>
+  <p>
+    <%= f.submit %> 
+  </p>
+<% end %>
